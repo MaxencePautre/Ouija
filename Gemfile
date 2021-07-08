@@ -27,10 +27,17 @@ gem 'jbuilder', '~> 2.7'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem "autoprefixer-rails"
+gem "font-awesome-sass", "~> 5.6.1"
+gem "simple_form"
+gem "devise"
+gem 'bootstrap', '~> 5.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "pry-byebug"
+  gem "factory_bot_rails"
+
 end
 
 group :development do
@@ -46,10 +53,10 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 3.26'
-  gem 'selenium-webdriver'
+  
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem "faker"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
